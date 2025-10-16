@@ -93,9 +93,17 @@ const AttendeeListPage = () => {
           variant="outlined"
           color="secondary"
           onClick={() => router.push('/register-attendee')}
-          style={{ marginTop: '8px' }}
+          style={{ marginTop: '8px', marginRight: '8px' }}
         >
           Register Attendee
+        </Button>
+        <Button
+          variant="outlined"
+          color="secondary"
+          onClick={() => router.push('/')}
+          style={{ marginTop: '8px' }}
+        >
+          Back to Home
         </Button>
       </div>
 

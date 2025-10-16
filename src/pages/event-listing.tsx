@@ -58,9 +58,9 @@ const EventListingPage = () => {
         <Button
           variant="contained"
           color="secondary"
-          onClick={() => router.push('/attendee-list')}
+          onClick={() => router.push('/')}
         >
-          Attendee List
+          Back to Home
         </Button>
       </Box>
       {events.length === 0 ? (

@@ -64,7 +64,16 @@ const CreateEventPage = () => {
           fullWidth
           margin="normal"
           required
-          InputLabelProps={{ shrink: true }}
+          slotProps={{
+            inputLabel: {
+              shrink: true,
+            },
+            input: {
+              inputProps: {
+                min: new Date().toISOString().slice(0, 16),
+              },
+            },
+          }}
         />
         <TextField
           label="End Time"
@@ -75,7 +84,16 @@ const CreateEventPage = () => {
           fullWidth
           margin="normal"
           required
-          InputLabelProps={{ shrink: true }}
+          slotProps={{
+            inputLabel: {
+              shrink: true,
+            },
+            input: {
+              inputProps: {
+                min: new Date().toISOString().slice(0, 16),
+              },
+            },
+          }}
         />
         <TextField
           label="Max Capacity"
